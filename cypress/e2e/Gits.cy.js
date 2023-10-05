@@ -17,6 +17,7 @@ describe('template spec', () => {
     cy.contains('Berlaku: 29 November 2006').should('be.visible')
     cy.contains('Status: Login Atau Berlangganan Untuk Akses Fitur Ini').should('be.visible')
   })
+  
   it('skenario 2',() => {
     cy.visit('https://www.hukumonline.com',{ failOnStatusCode: false })
     cy.get('footer').scrollIntoView()
